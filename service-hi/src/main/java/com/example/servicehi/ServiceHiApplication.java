@@ -1,12 +1,16 @@
 package com.example.servicehi;
 
+import brave.sampler.Sampler;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @EnableEurekaClient
@@ -17,6 +21,14 @@ public class ServiceHiApplication {
 		SpringApplication.run( ServiceHiApplication.class, args );
 	}
 
+	@Autowired
+	private RestTemplate restTemplate;
+
+	@Bean
+	public RestTemplate getRestTemplate(){
+		return new RestTemplate();
+	}
+
 	@Value("${server.port}")
 	String port;
 
@@ -25,4 +37,18 @@ public class ServiceHiApplication {
 		return "hi " + name + " ,i am from port:" + port;
 	}
 
+    @RequestMapping("/zipkin-hi")
+    public String callHome(){
+        return restTemplate.getForObject("http://localhost:9069/api-b/hi?name=forezp&token=22", String.class);
+    }
+    @RequestMapping("/info")
+    public String info(){
+        return "i'm service-hi";
+
+    }
+
+    @Bean
+    public Sampler defaultSampler() {
+        return Sampler.ALWAYS_SAMPLE;
+    }
 }

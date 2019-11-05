@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: eurekaserver
+    name: demo
   zipkin:
     base-url: http://localhost:9411
 eureka:
@@ -17,6 +17,14 @@ management:
       exposure:
         include: hystrix.stream
 
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"
+#      cors:
+#        allowed-origins: "*"
+#        allowed-methods: "*"
 
 # spring.application.name and server.port are set in the main methods,
 # so not done here
