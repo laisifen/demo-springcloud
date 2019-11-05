@@ -11,6 +11,7 @@
         <module name="consul-server" />
         <module name="demo" />
         <module name="eureka-server" />
+        <module name="gateway-server" />
         <module name="service-feign" />
         <module name="service-hi" />
         <module name="service-lucy" />
@@ -25,7 +26,9 @@
       <module name="consul-server" target="1.8" />
       <module name="demo" target="1.8" />
       <module name="demo-spingcloud" target="1.8" />
+      <module name="demo-springcloud" target="1.8" />
       <module name="eureka-server" target="1.8" />
+      <module name="gateway-server" target="1.8" />
       <module name="server-zipkin" target="1.8" />
       <module name="service-feign" target="1.8" />
       <module name="service-hi" target="1.8" />
