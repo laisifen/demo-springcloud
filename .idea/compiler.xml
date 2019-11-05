@@ -10,7 +10,6 @@
         <module name="config-server" />
         <module name="consul-server" />
         <module name="demo" />
-        <module name="demo-spingcloud" />
         <module name="eureka-server" />
         <module name="service-feign" />
         <module name="service-hi" />
