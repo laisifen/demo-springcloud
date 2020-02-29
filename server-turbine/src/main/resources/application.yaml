@@ -1,0 +1,26 @@
+spring:
+  application.name: service-turbine
+server:
+  port: 9100
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      cors:
+        allowed-origins: "*"
+        allowed-methods: "*"
+
+# 1. clusterNameExpression指定集群名称，默认表达式appName；此时：turbine.aggregator.clusterConfig需要配置想要监控的应用名称
+# 2. 当clusterNameExpression: default时，turbine.aggregator.clusterConfig可以不写，因为默认就是default
+# 3. 当clusterNameExpression: metadata['cluster']时，假设想要监控的应用配置了eureka.instance.metadata-map.cluster: ABC，则需要配置，同时turbine.aggregator.clusterConfig: ABC
+turbine:
+  aggregator:
+    cluster-config: default
+  app-config: demo,service-lucy  ### 配置Eureka中的serviceId列表，表明监控哪些服务
+  combine-host-port: true
+  cluster-name-expression: "'default'"
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://peer1:8761/eureka/

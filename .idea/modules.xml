@@ -4,17 +4,17 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/config-client/config-client.iml" filepath="$PROJECT_DIR$/config-client/config-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/consul-server/consul-server.iml" filepath="$PROJECT_DIR$/consul-server/consul-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-springcloud.iml" filepath="$PROJECT_DIR$/demo-springcloud.iml" />
-      <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/gateway-server/gateway-server.iml" filepath="$PROJECT_DIR$/gateway-server/gateway-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/service-feign/service-feign.iml" filepath="$PROJECT_DIR$/service-feign/service-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server-consul/server-consul.iml" filepath="$PROJECT_DIR$/server-consul/server-consul.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server-eureka/server-eureka.iml" filepath="$PROJECT_DIR$/server-eureka/server-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server-feign/server-feign.iml" filepath="$PROJECT_DIR$/server-feign/server-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server-gateway/server-gateway.iml" filepath="$PROJECT_DIR$/server-gateway/server-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server-ribbon/server-ribbon.iml" filepath="$PROJECT_DIR$/server-ribbon/server-ribbon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server-turbine/server-turbine.iml" filepath="$PROJECT_DIR$/server-turbine/server-turbine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server-zuul/server-zuul.iml" filepath="$PROJECT_DIR$/server-zuul/server-zuul.iml" />
       <module fileurl="file://$PROJECT_DIR$/service-hi/service-hi.iml" filepath="$PROJECT_DIR$/service-hi/service-hi.iml" />
       <module fileurl="file://$PROJECT_DIR$/service-lucy/service-lucy.iml" filepath="$PROJECT_DIR$/service-lucy/service-lucy.iml" />
-      <module fileurl="file://$PROJECT_DIR$/service-ribbon/service-ribbon.iml" filepath="$PROJECT_DIR$/service-ribbon/service-ribbon.iml" />
-      <module fileurl="file://$PROJECT_DIR$/service-turbine/service-turbine.iml" filepath="$PROJECT_DIR$/service-turbine/service-turbine.iml" />
-      <module fileurl="file://$PROJECT_DIR$/service-zuul/service-zuul.iml" filepath="$PROJECT_DIR$/service-zuul/service-zuul.iml" />
     </modules>
   </component>
 </project>

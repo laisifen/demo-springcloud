@@ -16,18 +16,20 @@
 	<description>Demo project for Spring Boot</description>
 
     <modules>
-        <module>eureka-server</module>
-        <module>service-ribbon</module>
-        <module>service-feign</module>
-        <module>service-zuul</module>
-        <module>config-server</module>
-        <module>config-client</module>
-		<module>service-turbine</module>
+		<module>config-server</module>
+		<module>config-client</module>
+		
+        <module>server-eureka</module>
+		<module>server-gateway</module>
+        <module>server-ribbon</module>
+        <module>server-feign</module>
+        <module>server-zuul</module>
+		<module>server-turbine</module>
+		<module>server-consul</module>
+		
         <module>service-lucy</module>
         <module>demo</module>
-        <module>consul-server</module>
         <module>service-hi</module>
-		<module>gateway-server</module>
     </modules>
 
 	<properties>

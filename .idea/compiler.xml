@@ -6,36 +6,50 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="config-client" />
-        <module name="config-server" />
-        <module name="consul-server" />
         <module name="demo" />
-        <module name="eureka-server" />
-        <module name="gateway-server" />
-        <module name="service-feign" />
+        <module name="server-ribbon" />
         <module name="service-hi" />
+        <module name="config-server" />
+        <module name="server-eureka" />
+        <module name="server-gateway" />
+        <module name="server-feign" />
+        <module name="server-zuul" />
+        <module name="server-turbine" />
+        <module name="server-consul" />
+        <module name="config-client" />
         <module name="service-lucy" />
-        <module name="service-ribbon" />
-        <module name="service-turbine" />
-        <module name="service-zuul" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="config-client" target="1.8" />
       <module name="config-server" target="1.8" />
-      <module name="consul-server" target="1.8" />
       <module name="demo" target="1.8" />
-      <module name="demo-spingcloud" target="1.8" />
       <module name="demo-springcloud" target="1.8" />
-      <module name="eureka-server" target="1.8" />
-      <module name="gateway-server" target="1.8" />
-      <module name="server-zipkin" target="1.8" />
-      <module name="service-feign" target="1.8" />
+      <module name="server-consul" target="1.8" />
+      <module name="server-eureka" target="1.8" />
+      <module name="server-feign" target="1.8" />
+      <module name="server-gateway" target="1.8" />
+      <module name="server-ribbon" target="1.8" />
+      <module name="server-turbine" target="1.8" />
+      <module name="server-zuul" target="1.8" />
       <module name="service-hi" target="1.8" />
       <module name="service-lucy" target="1.8" />
-      <module name="service-ribbon" target="1.8" />
-      <module name="service-turbine" target="1.8" />
-      <module name="service-zuul" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="config-client" options="-parameters" />
+      <module name="config-server" options="-parameters" />
+      <module name="demo" options="-parameters" />
+      <module name="server-consul" options="-parameters" />
+      <module name="server-eureka" options="-parameters" />
+      <module name="server-feign" options="-parameters" />
+      <module name="server-gateway" options="-parameters" />
+      <module name="server-ribbon" options="-parameters" />
+      <module name="server-turbine" options="-parameters" />
+      <module name="server-zuul" options="-parameters" />
+      <module name="service-hi" options="-parameters" />
+      <module name="service-lucy" options="-parameters" />
+    </option>
   </component>
 </project>
